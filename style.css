@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root{
+    --blue:#22559e;
+    --bluetwo: #153777;
+    --bluethree:#2765b2;
+    --bluefour: rgb(45,113,192);
+    --bluefive: rgb(45,113,192, .5);
+    --bluesix: rgb(56, 126, 206);
+    --blueseven: #2c6cbb;
+    --blueeight: rgb(44, 138, 245);
+    --cursor: url(img/cusour.png), auto;
+    --color: rgb(238, 238, 238, .9);
+    --color1: rgb(255, 255, 255, .45);
+    --color2: rgb(255, 255, 255, .5);
+    --hover: red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--blue);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width: 60%;
+    height: 80%;
+    background: linear-gradient(100deg,var(--bluetwo), var(--bluethree) );
+    box-shadow: 0 30px 25px -10px rgb(0,0,0,.6);
+    padding: 0 30px ;
+}
+
+header nav {
+    width:100%;
+    height: 15%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style: none;
+    display:flex;
+    align-items:center;
+}
+
+header nav ul li{
+    padding: 3px 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(238, 238, 238,.9);
+    transition: .8s linear;
+    cursor: var(--cursor);
+}
+
+header nav ul a:hover{
+    color: var(--hover);
+
+}
+
+header nav .buy_btn{
+    text-decoration: none;
+    color: rgb(238, 238, 238, .9);
+    font-weight: 600;
+    font-size: 12px;
+    padding:5px 20px;
+    border: 2px solid var(--color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header nav .buy_btn:hover{
+    background: var(--hover);
+}
+
+header section {
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid var(--color); */
+    display: flex;
+}
+/* left */
+header section .left, 
+.right{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid var(--color); */
+}
+
+header section .left{
+    padding: 40px 0 0 70px;
+}
+
+header section .left #left_btn{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header section .left #left_btn:hover{
+    color: var(--hover);
+}
+header section .left .content{
+    /* border: 1px solid var(--color); */
+    color: var(--color);
+
+}
+
+header section .left .content h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header section .left .content p:nth-child(2){
+    font-size: 12px;
+    color:var(--color1);
+}
+
+header section .left .content h2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+header section .left .content .nutritation{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .left .content .nutritation .card{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: var(--bluefive);
+    margin-right: 5px;
+}
+
+header section .left .content .nutritation .card:nth-child(1){
+    background:var(--bluefour);
+}
+
+header section .left .content .nutritation .card p{
+    font-size: 7px;
+    text-align:center;
+    color: rgb(255,255,255, .7);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+header section .left .content .nutritation .card:nth-child(1) p{
+    margin-top: 5px;
+}
+
+header section .left .content .nutritation .card h3{
+    font-weight: 600;
+    text-align:center;
+    margin-top: 2px;
+}
+
+header section .left .content .nutritation .card h6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: rgb(56, 126, 206, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+header section .left .content .nutritation .card:nth-child(1) h6{
+    background:var(--bluesix);
+}
+
+header section .left .content p:nth-child(5){
+    font-size: 10px;
+    color: var(--color2);
+    margin-top: 5px;
+}
+
+header section .left .content button{
+    margin-top: 30px;
+    padding: 3px 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+header section .left .content button:hover{
+    background: var(--bluesix);
+}
+header section .left .item {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    margin-top: 20px;
+}
+
+header section .left .item .card_pepsi{
+    width: 30px;
+    /* border: 1px solid #fff; */
+    margin-right: 30px;
+    overflow: hidden;
+    z-index:9999;
+    cursor: pointer;
+}
+
+header section .left .item .card_pepsi img{
+    width: 30px;
+    transition: .3s linear;
+}
+
+header section .left .item .card_pepsi h6{
+    width: 30px; 
+    text-align: center;
+    color: var(--blueseven);
+}
+
+header section .left .item .card_pepsi:hover h6{
+    color:red;
+}
+/* right */
+header section .right{
+    width: 40%;
+}
+
+
+header section .right img{
+    width: 430px;
+    margin: 20px 0 0 -180px;
+
+}
+
+header section .right .level{
+    position: absolute;
+    top: 20%;
+    right: 0; 
+    width: 30px; 
+    height: 45%;
+    /* border: 1px solid #fff; */
+    display: flex; 
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .right .level h6{
+    width: 8px;
+    height: 1px;
+    background:var(--color2);
+    margin-top: 13px;
+}
+
+header section .right .level h6:nth-child(3){
+    width: 20px;
+    height: 1px;
+    background: var(--color);
+}
+header .ml{
+    position: absolute;
+    width: 110px;
+    height: 150px;
+    background: var(--blueeight);
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px 0 0 20px;
+}
+
+header .ml p{
+    font-size: 10px;
+}
+
+header .ml h6{
+    font-size:10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+header .ml h5{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: var(--bluethree);
+    bottom: 0;
+    left: 0;
+}
+
+
+header section .right .right_btn{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header section .right .right_btn span{
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--color2);
+    margin-right: 7px;
+}
+
+header section .right .right_btn .bi{
+    font-size: 12px;
+    cursor: pointer;
+    transition:.3s linear;
+}
+
+header section .right .right_btn .bi:hover{
+    color: var(--hover);
+  
+}
